@@ -1,0 +1,279 @@
+.wrepper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+.car{
+	width: 2000px;
+	height: 100px;
+	padding: 20px;
+	background-image: linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+   text-align: center;
+}
+.buttom{
+	padding: 10px;
+	color: pink;
+	border: 10px double pink;
+}
+
+
+.main__conteiner {
+	background-color: darkgray;
+	width:2000px ;
+	min-height: 100%;
+	padding: 20px;
+}
+
+
+.section__translate {
+   width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.translate-section__body {
+	width: 200px;
+	height: 200px;
+	transform: translate(20%, 20%);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.translate-section__body:hover{
+	transform-origin: 20px;
+	transform: skewX(10deg);
+}
+
+
+.section__scale {
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -200px;
+	left: 250px;
+}
+.scale-section__body {
+	width: 200px;
+	height: 200px;
+	transform: scale(0.7);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.scale-section__body:hover{
+	transform: scale(2)
+}
+
+
+.section__rotate {
+   width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -400px;
+	left: 500px;
+
+	perspective: 400px;
+	perspective-origin: center;
+} 
+.rotate-section__body {
+   width: 200px;
+	height: 200px;
+	transform: rotate( -20deg);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.rotate-section__body:hover{
+	transform: rotateX(50deg);
+}
+
+
+.section__skew {
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -600px;
+	left: 750px;
+}
+
+.skew-section__body {
+   width: 200px;
+	height: 200px;
+	transform: skewY(-20deg);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.section__matrix {
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -800px;
+	left: 1050px;
+
+	perspective: 500px;
+   perspective-origin: center;
+}
+
+.matrix-section__body {
+   width: 200px;
+	height: 200px;
+	transform: translate(20%, 20%) scale(0.5) rotate(10deg);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.matrix-section__body:hover{
+	transform: rotate3d(5,250,50, -30deg);
+}
+
+.section__animation{
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -1000px;
+	left: 1300px;
+
+	perspective: 500px;
+   perspective-origin: center;
+}
+.animation-section__body {
+	width: 200px;
+	height: 200px;
+	transform: translate3d(20px, 20px, 50px);
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+}
+.animation-section__body:hover{
+	transform: scale3d(1,2,1);
+}
+
+.style-section{
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -800px;
+	left: 0px;
+
+	perspective: 400px;
+	transform-style: preserve-3d;
+}
+.style-section__body{
+	width: 200px;
+	height: 200px;
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+   transform: rotateY(360deg);
+	transition: all 0.3s ease 0s;
+}  
+.style-section__body:hover{
+	transform: rotateY(180deg);
+}
+
+
+.baskface-section{
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(to right bottom, #0b022c, #48264d, #864b6b, #c37785, #fbaa9f);
+	position: relative;
+	top: -1000px;
+	left: 250px;
+	perspective: 100px;
+	/* transform-style: flat; */
+}
+.baskface-section__body{
+	width: 200px;
+	height: 200px;
+	background: url(../img/coffee.jpg) 0 0 / cover no-repeat;
+   transform: rotateY(180deg);
+	transition: all 0.1s ease 0s;
+   backface-visibility: visible;
+}
+.baskface-section__body:hover{
+	transform: rotateY(0deg);
+	transition: all 0.1s ease 0s;
+   backface-visibility: hidden;
+}
+
+
+
+
+.avto__fon {
+	background: url(../img/kartinkin.jpg) 0 0 / cover no-repeat;
+	width: 1300px;
+	height: 1000px;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.budova-car {
+	position: relative;
+	z-index: 20;
+}
+.budova-car__top {
+	background-color: #dbbac0;
+	width: 200px;
+	height: 50px;
+	position: relative;
+	bottom: 300px;
+	left: 370px;
+	border-radius: 90px 90px 0px 0px;
+}
+.budova-car__bottom {
+	background-color: #c37785;
+	width: 300px;
+	height: 70px;
+	position: relative;
+	bottom: 300px;
+	left: 300px;
+	border-radius: 90px 20px 20px 10px;
+}
+
+.budova-car__wheel-l{
+	background-color: black;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 330px;
+	bottom: 340px;
+}
+.budova-car__wheel-r{
+	background-color: black;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 510px;
+	bottom: 400px;
+}
+.budova-car__fara-l{
+	background-color: yellow;
+	border-radius: 20px 5px 10px 5px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 300px;
+	bottom: 465px;
+}
+.budova-car__fara-r{
+	background-color: red;
+	border-radius: 10px 40px 40px 10px;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	left: 590px;
+	bottom:500px;
+}
+.budova-car__windows{
+	background-color: #7c797a;
+	width: 190px;
+	height: 45px;
+	position: relative;
+	bottom: 570px;
+	left: 375px;
+	border-radius: 90px 90px 0px 0px;
+	z-index: 100;
+}
+
+.budova-car__windows:hover{
+	background: url("../img/boss.png") 0 center / cover no-repeat;
+}
